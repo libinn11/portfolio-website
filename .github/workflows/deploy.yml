@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -47,7 +45,7 @@ jobs:
     - name: Build Angular project for GitHub Pages
       run: |
         # Build with production configuration and correct base href
-        npm run build -- --configuration production --base-href=/portfolio-website/ --verbose
+        npm run build -- --configuration production --base-href=/portfolio-website/ --output-hashing=none
         
     - name: Verify build output
       run: |
