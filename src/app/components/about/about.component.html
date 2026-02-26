@@ -1,0 +1,33 @@
+<section id="about" class="about-section" *ngIf="profile$ | async as profile">
+  <div class="section-header">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Get to know me better</p>
+  </div>
+  
+  <div class="about-content">
+    <div class="about-card">
+      <div class="about-image">
+        <img [src]="profile.basicInfo.profileImage" [alt]="profile.basicInfo.name" class="profile-img">
+      </div>
+      <div class="about-text">
+        <h3>{{ profile.basicInfo.name }}</h3>
+        <p class="about-title">{{ profile.basicInfo.title }}</p>
+        <p class="about-description">{{ profile.basicInfo.about }}</p>
+        <div class="about-info">
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <a [href]="'mailto:' + profile.basicInfo.email" class="info-value">{{ profile.basicInfo.email }}</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone:</span>
+            <a [href]="'tel:' + profile.basicInfo.phone" class="info-value">{{ profile.basicInfo.phone }}</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location:</span>
+            <span class="info-value">{{ profile.basicInfo.location }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

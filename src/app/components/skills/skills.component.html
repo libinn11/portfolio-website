@@ -1,0 +1,14 @@
+<section id="skills" class="skills-section" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="skills-grid">
+      <div *ngFor="let skillGroup of profile.skills" class="skill-category">
+        <h3>{{ skillGroup.category }}</h3>
+        <div class="skill-items">
+          <span *ngFor="let skill of skillGroup.items" class="skill-tag">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

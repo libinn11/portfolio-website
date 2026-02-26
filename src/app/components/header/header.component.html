@@ -1,0 +1,42 @@
+<header class="header" *ngIf="profile$ | async as profile">
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h1>{{ profile.basicInfo.name }}</h1>
+        <span class="nav-title">{{ profile.basicInfo.title }}</span>
+      </div>
+      
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a routerLink="/#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/#education" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-social">
+        <a *ngFor="let link of profile.socialLinks" 
+           [href]="link.url" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="social-link"
+           [title]="link.platform">
+          <span class="social-icon">{{ link.platform.charAt(0) }}</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

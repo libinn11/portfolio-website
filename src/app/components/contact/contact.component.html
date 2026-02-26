@@ -1,0 +1,39 @@
+<section id="contact" class="contact-section" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>I'm always interested in hearing about new opportunities and exciting projects.</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <strong>Email:</strong> 
+            <a [href]="'mailto:' + profile.basicInfo.email">{{ profile.basicInfo.email }}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Phone:</strong> 
+            <a [href]="'tel:' + profile.basicInfo.phone">{{ profile.basicInfo.phone }}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Location:</strong> {{ profile.basicInfo.location }}
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <h4>Follow Me</h4>
+          <div class="social-grid">
+            <a *ngFor="let link of profile.socialLinks" 
+               [href]="link.url" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="social-link">
+              {{ link.platform }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

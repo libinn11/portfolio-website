@@ -1,0 +1,101 @@
+{
+  "basicInfo": {
+    "name": "Libin C Jacob",
+    "title": "Senior Software Developer",
+    "email": "libinn11@gmail.com",
+    "phone": "+91 9745125807",
+    "location": "Palamoottil, Thottakkad, Kerala, India",
+    "about": "Seasoned software developer with over 12.4 years of experience in designing, developing, and deploying scalable web and mobile applications. Specialized in Angular, Node.js, and ASP.NET MVC, with expertise in frontend and backend development and enterprise-level solutions. Passionate about continuous learning and driving technical excellence within teams.",
+    "profileImage": "/assets/images/profile.jpg"
+  },
+  "socialLinks": [
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/libin-c-jacob-81738439" },
+    { "platform": "GitHub", "url": "https://github.com/libincjacob" },
+    { "platform": "Email", "url": "mailto:libinn11@gmail.com" }
+  ],
+  "skills": [
+    { "category": "Frontend", "items": ["Angular (v2-v18)", "HTML", "CSS", "Bootstrap", "JavaScript", "TypeScript", "D3.js", "RxJS", "NgRx", "Lit-HTML", "Storybook", "Nx Workspace"] },
+    { "category": "Backend", "items": ["Node.js", "ASP.NET MVC", "C#", "Express.js"] },
+    { "category": "Databases", "items": ["MongoDB", "PostgreSQL", "MS SQL", "Oracle"] },
+    { "category": "Cloud & DevOps", "items": ["Docker", "CI/CD (Jenkins, GitHub Actions)", "Microservices", "Ionic", "Cordova"] },
+    { "category": "Other Tools", "items": ["Jasmine", "Karma", "jQuery", "AJAX", "LINQ"] }
+  ],
+  "experience": [
+    {
+      "company": "NDimensionZ Solutions Pvt Ltd",
+      "role": "Senior Software Developer",
+      "duration": "Sep 2025 - Present",
+      "description": "Led frontend development using Angular21, ngrx store, and NX workspace, enhancing UI efficiency.",
+      "technologies": ["Angular", "Devin AI", "Windsurf", "NgRx", "NX", "TypeScript", "Node.js"]
+    },
+    {
+      "company": "HCL Technologies",
+      "role": "Senior Technical Lead",
+      "duration": "July 2021 – Sep 2025",
+      "description": "Led frontend development using Angular20, ngrx store, lit-html, storybook and NX workspace, enhancing UI efficiency. Designed and implemented microservices-based applications with Node.js and MongoDB. Contributed to Cat® Productivity, a platform analyzing construction equipment data for optimized performance tracking.",
+      "technologies": ["Angular", "NgRx", "NX", "TypeScript", "Node.js", "MongoDB", "Lit-HTML", "Storybook"]
+    },
+    {
+      "company": "UST Global",
+      "role": "Senior Software Developer",
+      "duration": "Feb 2017 – Jun 2021",
+      "description": "Developed scalable Angular applications for Walmart's Sustainability project, helping reduce one billion metric tons of greenhouse gases. Built GDPR-compliant Data Discovery Tool with Python and AI-driven techniques for data classification. Enhanced Anthem's Benefit Plan Document generation using Machine Learning and NLP techniques.",
+      "technologies": ["Angular", "TypeScript", "Bootstrap", "Machine Learning", "NLP", "GDPR"]
+    },
+    {
+      "company": "eTeam IT Solutions",
+      "role": "Software Engineer",
+      "duration": "May 2016 - Jan 2017",
+      "description": "Developed enterprise applications using ASP.NET MVC, Angular, and Node.js for various clients including eTeam Infoservices, Seeroo IT Solutions, and BEO Software.",
+      "technologies": ["ASP.NET MVC", "C#", "Angular", "Node.js", "MongoDB", "MS SQL"]
+    },
+    {
+      "company": "Seeroo IT Solutions",
+      "role": "Software Developer",
+      "duration": "Sep 2015 – May 2016",
+      "description": "Developed enterprise applications using ASP.NET MVC, Angular, and Node.js for various clients including eTeam Infoservices, Seeroo IT Solutions, and BEO Software.",
+      "technologies": ["ASP.NET MVC", "C#", "Angular", "Node.js", "MongoDB", "MS SQL"]
+    },
+    {
+      "company": "Beo So ware Pvt Ltd",
+      "role": "Software Developer",
+      "duration": "Jun 2013 - Sep 2015",
+      "description": "Developed enterprise applications using ASP.NET MVC, Angular, and Node.js for various clients including eTeam Infoservices, Seeroo IT Solutions, and BEO Software.",
+      "technologies": ["ASP.NET MVC", "C#", "Angular", "Node.js", "MongoDB", "MS SQL"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cat® Productivity Platform",
+      "description": "Data-driven analytics platform for monitoring construction equipment performance. Led frontend development with Angular18 and ngrx store for enhanced UI efficiency.",
+      "techStack": ["Angular", "NgRx", "NX", "TypeScript", "CSS3", "D3.js"]
+    },
+    {
+      "name": "Walmart Sustainability Platform",
+      "description": "Scalable Angular application helping Walmart suppliers track and reduce carbon emissions, achieving industry sustainability goals.",
+      "techStack": ["Angular", "Bootstrap", "TypeScript", "D3.js"]
+    },
+    {
+      "name": "GDPR Data Discovery Tool",
+      "description": "AI-driven GDPR compliance tool to detect and manage sensitive data storage for UST Global. Built with Angular6 and Python backend.",
+      "techStack": ["Angular","TypeScript", "Bootstrap"]
+    },
+    {
+      "name": "Benefit Plan Document Generator",
+      "description": "Machine Learning and NLP-based system for generating optimized benefit plan documents at Anthem.",
+      "techStack": ["Angular", "TypeScript", "CSS3"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mahatma Gandhi University",
+      "degree": "Master of Computer Applications (MCA)",
+      "duration": "2011"
+    },
+    {
+      "institution": "Mahatma Gandhi University",
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "duration": "2007"
+    }
+  ]
+}

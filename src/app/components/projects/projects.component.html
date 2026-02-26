@@ -1,0 +1,16 @@
+<section id="projects" class="projects-section" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="projects-grid">
+      <div *ngFor="let project of profile.projects" class="project-card">
+        <h3>{{ project.name }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        
+        <div class="tech-stack">
+          <span *ngFor="let tech of project.techStack" class="tech-tag">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

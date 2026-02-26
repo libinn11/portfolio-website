@@ -1,0 +1,19 @@
+<section id="experience" class="experience-section" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    
+    <div class="experience-timeline">
+      <div *ngFor="let exp of profile.experience; let isLast = last" class="experience-item" [class.last]="isLast">
+        <div class="experience-content">
+          <h3>{{ exp.role }}</h3>
+          <h4>{{ exp.company }}</h4>
+          <p class="duration">{{ exp.duration }}</p>
+          <p class="description">{{ exp.description }}</p>
+          <div class="technologies">
+            <span *ngFor="let tech of exp.technologies" class="tech-tag">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

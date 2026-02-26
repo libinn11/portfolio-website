@@ -1,0 +1,14 @@
+<section id="education" class="education-section" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    
+    <div class="education-grid">
+      <div *ngFor="let edu of profile.education" class="education-card">
+        <div class="education-icon">🎓</div>
+        <h3>{{ edu.degree }}</h3>
+        <h4>{{ edu.institution }}</h4>
+        <p class="duration">{{ edu.duration }}</p>
+      </div>
+    </div>
+  </div>
+</section>

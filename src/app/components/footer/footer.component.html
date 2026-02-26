@@ -1,0 +1,8 @@
+<footer class="footer" *ngIf="profile$ | async as profile">
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy; {{ getCurrentYear() }} {{ profile.basicInfo.name }}. All rights reserved.</p>
+      <p>Built with Angular & ❤️</p>
+    </div>
+  </div>
+</footer>
