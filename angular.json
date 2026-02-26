@@ -62,7 +62,7 @@
             },
             "github-pages": {
               "outputPath": "dist/portfolio-website",
-              "baseHref": "/",
+              "baseHref": "/portfolio-website/",
               "outputHashing": "none",
               "optimization": true,
               "sourceMap": false,
