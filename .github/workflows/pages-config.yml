@@ -1,0 +1,33 @@
+# GitHub Pages Configuration
+# This file contains settings for GitHub Pages deployment
+
+# Repository settings
+repository: libinn11/portfolio-website
+branch: main
+
+# Build configuration
+build:
+  command: npm run build -- --configuration production
+  output: dist/portfolio-website
+
+# Custom domain
+domain: www.libinn11.co.in
+
+# SEO and metadata
+title: "Libin C Jacob - Senior Software Developer Portfolio"
+description: "Professional portfolio showcasing Angular development projects and technical skills"
+author: "Libin C Jacob"
+url: "https://www.libinn11.co.in"
+
+# Social media
+twitter:
+  username: libinn11
+  card: summary_large_image
+
+# Analytics (optional)
+google_analytics: # Add your tracking ID if needed
+
+# Sitemap
+sitemap:
+  changefreq: weekly
+  priority: 0.8
