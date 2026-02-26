@@ -40,7 +40,7 @@ jobs:
     - name: Angular project setup
       run: |
         # Verify Angular CLI installation
-        npx ng version --verbose
+        npx ng version
         
     - name: Build Angular project for GitHub Pages
       run: |
