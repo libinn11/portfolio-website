@@ -24,7 +24,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [20.x]
     
     steps:
     - name: Checkout repository
@@ -37,24 +37,32 @@ jobs:
         cache: 'npm'
         
     - name: Install dependencies
-      run: npm ci
+      run: npm ci --prefer-offline --no-audit
       
     - name: Angular project setup
       run: |
         # Verify Angular CLI installation
-        npx ng version
+        npx ng version --verbose
         
     - name: Build Angular project for GitHub Pages
       run: |
         # Build with production configuration and correct base href
-        npm run build -- --configuration production --base-href=/portfolio-website/
+        npm run build -- --configuration production --base-href=/portfolio-website/ --verbose
         
     - name: Verify build output
       run: |
         # Check if build was successful
+        echo "=== Build Directory Contents ==="
+        ls -la dist/
+        echo "=== Browser Directory Contents ==="
         ls -la dist/portfolio-website/browser/
         # Verify index.html exists
-        test -f dist/portfolio-website/browser/index.html
+        if [ -f dist/portfolio-website/browser/index.html ]; then
+          echo "✅ Build verification passed - index.html found"
+        else
+          echo "❌ Build verification failed - index.html not found"
+          exit 1
+        fi
         
     - name: Configure GitHub Pages source
       uses: actions/configure-pages@v4
