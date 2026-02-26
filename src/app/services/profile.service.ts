@@ -9,7 +9,7 @@ import { shareReplay } from 'rxjs/operators';
 })
 export class ProfileService {
   private http = inject(HttpClient);
-  private readonly PROFILE_URL = '/profile.json';
+  private readonly PROFILE_URL = './profile.json';
   
   private profileCache$?: Observable<Profile>;
 
