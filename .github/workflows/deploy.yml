@@ -35,7 +35,10 @@ jobs:
         cache: 'npm'
         
     - name: Install dependencies
-      run: npm ci --prefer-offline --no-audit
+      run: |
+        echo "=== Installing dependencies ==="
+        npm ci --prefer-offline --no-audit --verbose
+        echo "=== Dependencies installed successfully ==="
       
     - name: Angular project setup
       run: |
@@ -44,8 +47,11 @@ jobs:
         
     - name: Build Angular project for GitHub Pages
       run: |
+        echo "=== Starting Angular build ==="
         # Build with production configuration and correct base href
-        npm run build -- --configuration production --base-href=/portfolio-website/ --output-hashing=none
+        # Disable SSR for GitHub Pages static deployment
+        npm run build -- --configuration production --base-href=/portfolio-website/ --output-hashing=none --no-ssr
+        echo "=== Angular build completed ==="
         
     - name: Verify build output
       run: |
