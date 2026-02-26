@@ -24,7 +24,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22.x]
     
     steps:
     - name: Checkout repository
@@ -52,9 +52,9 @@ jobs:
     - name: Verify build output
       run: |
         # Check if build was successful
-        ls -la dist/portfolio-website/
+        ls -la dist/portfolio-website/browser/
         # Verify index.html exists
-        test -f dist/portfolio-website/index.html
+        test -f dist/portfolio-website/browser/index.html
         
     - name: Configure GitHub Pages source
       uses: actions/configure-pages@v4
@@ -65,13 +65,13 @@ jobs:
     - name: Create CNAME file for custom domain
       run: |
         # Create CNAME file in the build directory for GitHub Pages
-        echo "www.libinn11.co.in" > dist/portfolio-website/CNAME
+        echo "www.libinn11.co.in" > dist/portfolio-website/browser/CNAME
         
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        # Upload dist/portfolio-website directory
-        path: './dist/portfolio-website'
+        # Upload dist/portfolio-website/browser directory
+        path: './dist/portfolio-website/browser'
 
   deploy:
     needs: build
