@@ -37,7 +37,7 @@ jobs:
     - name: Install dependencies
       run: |
         echo "=== Installing dependencies ==="
-        npm ci --prefer-offline --no-audit --verbose
+        npm ci --prefer-offline --no-audit
         echo "=== Dependencies installed successfully ==="
       
     - name: Angular project setup
@@ -47,10 +47,9 @@ jobs:
         
     - name: Build Angular project for GitHub Pages
       run: |
-        echo "=== Starting Angular build ==="
-        # Build with production configuration and correct base href
-        # Disable SSR for GitHub Pages static deployment
-        npm run build -- --configuration production --base-href=/portfolio-website/ --output-hashing=none --no-ssr
+        echo "=== Starting Angular build for GitHub Pages ==="
+        # Use dedicated github-pages configuration
+        npm run build -- --configuration github-pages
         echo "=== Angular build completed ==="
         
     - name: Verify build output
