@@ -75,6 +75,11 @@ jobs:
         # Automatically configure GitHub Pages to use GitHub Actions as source
         enablement: true
       
+    - name: Create CNAME file for custom domain
+      run: |
+        # Create CNAME file in build directory for GitHub Pages
+        echo "www.libinn11.co.in" > dist/portfolio-website/browser/CNAME
+        
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
