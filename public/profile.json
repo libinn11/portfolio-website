@@ -5,7 +5,7 @@
     "email": "libinn11@gmail.com",
     "phone": "+91 9745125807",
     "location": "Palamoottil, Thottakkad, Kerala, India",
-    "about": "Seasoned software developer with over 12.4 years of experience in designing, developing, and deploying scalable web and mobile applications. Specialized in Angular, Node.js, and ASP.NET MVC, with expertise in frontend and backend development and enterprise-level solutions. Passionate about continuous learning and driving technical excellence within teams.",
+    "about": "Seasoned software developer with over 13 years of experience in designing, developing, and deploying scalable web and mobile applications. Specialized in Angular, Node.js, and ASP.NET MVC, with expertise in frontend and backend development and enterprise-level solutions. Passionate about continuous learning and driving technical excellence within teams.",
     "profileImage": "assets/images/profile.svg"
   },
   "socialLinks": [
@@ -14,17 +14,24 @@
     { "platform": "Email", "url": "mailto:libinn11@gmail.com" }
   ],
   "skills": [
-    { "category": "Frontend", "items": ["Angular (v2-v18)", "HTML", "CSS", "Bootstrap", "JavaScript", "TypeScript", "D3.js", "RxJS", "NgRx", "Lit-HTML", "Storybook", "Nx Workspace"] },
-    { "category": "Backend", "items": ["Node.js", "ASP.NET MVC", "C#", "Express.js"] },
+    { "category": "Frontend", "items": ["Angular (v2-v21)", "HTML", "CSS", "Bootstrap", "JavaScript", "TypeScript", "D3.js", "RxJS", "NgRx", "Lit-HTML", "Storybook", "Nx Workspace"] },
+    { "category": "Backend", "items": ["Node.js", "ASP.NET MVC", "C#", "Express.js", Java Springboot] },
     { "category": "Databases", "items": ["MongoDB", "PostgreSQL", "MS SQL", "Oracle"] },
-    { "category": "Cloud & DevOps", "items": ["Docker", "CI/CD (Jenkins, GitHub Actions)", "Microservices", "Ionic", "Cordova"] },
+    { "category": "Cloud & DevOps", "items": ["Docker", "CI/CD (Jenkins, GitHub Actions)", "Microservices", "Ionic", "Cordova, Capacitor"] },
     { "category": "Other Tools", "items": ["Jasmine", "Karma", "jQuery", "AJAX", "LINQ"] }
   ],
   "experience": [
     {
+      "company": "Quest Global",
+      "role": "Senior Lead Engineer",
+      "duration": "May 2026 - Present",
+      "description": "Led full stack development using Angular21, ngrx store, NX workspace, nodejs and java, enhancing both frontend and backend efficiency.",
+      "technologies": ["Angular", "copilot", "NgRx", "NX", "TypeScript", "Node.js", "java springboot"]
+    },
+    {
       "company": "NDimensionZ Solutions Pvt Ltd",
       "role": "Senior Software Developer",
-      "duration": "Sep 2025 - Present",
+      "duration": "Sep 2025 - Apr 2026",
       "description": "Led frontend development using Angular21, ngrx store, and NX workspace, enhancing UI efficiency.",
       "technologies": ["Angular", "Devin AI", "Windsurf", "NgRx", "NX", "TypeScript", "Node.js"]
     },
